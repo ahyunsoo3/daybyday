@@ -1,2 +1,2 @@
 # LeetCode
-To broden my basic skills of coding, logic, structure of building software.
+To broden my basic skills of the coding, logic, structure of building a software.
