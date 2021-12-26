@@ -1,3 +1,5 @@
+import random
+
 class Solution:
     #original
     #def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -23,6 +25,11 @@ class Solution:
 
 sol = Solution
 
-res = sol.twoSum(nums=[1,2,3,4], target=5)
+#res = sol.twoSum(nums=[1,2,3,4], target=5)
 
+nums = random.sample(range(0,10), 5)
+res = sol.twoSum(nums=nums, target = 5)
+
+print(nums)
+print('-------------------')
 print(res)
