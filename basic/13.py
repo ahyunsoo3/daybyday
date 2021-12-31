@@ -13,9 +13,21 @@ class Solution:
     def romanToInt(self, s):
         roman = {'M': 1000,'D': 500 ,'C': 100,'L': 50,'X': 10,'V': 5,'I': 1} #dictionary
         z = 0
-        for i in range(0, len(s) - 1):
+        for i in range(0, len(s) - 1): # why len(s) - 1? : the last result don't need to be calculated because this is not involved in the rule that can be placed.
+
+            # if s = MDC, i = 0
+            # s[i] : M, the result of this: 1000
+
             if roman[s[i]] < roman[s[i+1]]:
-                z -= roman[s[i]] #is this needed?
+
+
+
+                z -= roman[s[i]] #is this needed? : At that time, I dont feel free to read the definition of problem perfectly.
+                # I have skim through it. (Not good, in this case)
+
+                # I deduce that this is needed for I, X, and C can be placed before V, L, and D
             else:
                 z += roman[s[i]]
-        return z + roman[s[-1]]
+        return z + roman[s[-1]] # relating to len(s) - 1
+
+
