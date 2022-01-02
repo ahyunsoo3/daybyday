@@ -2,4 +2,7 @@
 
 class Solution:
     def isPalindrome(self, x):
-        return False if x < 0 else x == int(str(x)[::-1])
+        if x < 0:
+            return False
+        elif x == int(str(x)[::-1]):
+            return
