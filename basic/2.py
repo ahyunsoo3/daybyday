@@ -2,6 +2,9 @@
 #
 # You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
+# Find materials.
+# => Even, there are times when you have to find data elsewhere that are not provided here. Of course, the compensation for doing so is certain.
+
 
 # Definition for singly-linked list.
 class ListNode(object):
