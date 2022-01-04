@@ -4,31 +4,44 @@
 
 
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
-class Solution(object):
-    def addTwoNumbers(self, l1, l2):
-        """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
-        """
-        result = ListNode(0)
-        result_tail = result
-        carry = 0
 
-        while l1 or l2 or carry:
-            val1 = (l1.val if l1 else 0)
-            val2 = (l2.val if l2 else 0)
-            carry, out = divmod(val1 + val2 + carry, 10)
+list = ListNode(2)
+print(list.val)
+print(list.next)
 
-            result_tail.next = ListNode(out)
-            result_tail = result_tail.next
+list.next = ListNode(3)
+print("\n\n- added ListNode(3) -")
+print(list.next)
+print(list.next.val)
+print(list.next.next)
 
-            l1 = (l1.next if l1 else None)
-            l2 = (l2.next if l2 else None)
 
-        return result.next
+list.next.next = ListNode(4)
+print("\n\n- added ListNode(4) -")
+print(list.next.next.val)
+print(list.next.next.next)
+
+print("\n\n- Sum of index 0, 1 in ListNode -")
+result = list.val + list.next.val
+print(result)
+
+
+
+# def addTwoNumbers(self, l1, l2):
+#     carry = 0;
+#     res = n = ListNode(0);
+#     while l1 or l2 or carry:
+#         if l1:
+#             carry += l1.val
+#             l1 = l1.next;
+#         if l2:
+#             carry += l2.val;
+#             l2 = l2.next;
+#         carry, val = divmod(carry, 10)
+#         n.next = n = ListNode(val);
+#     return res.next;
