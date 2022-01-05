@@ -12,39 +12,40 @@ class ListNode(object):
         self.val = x
         self.next = None
 
-
-list = ListNode(2)
-print(list.val)
-print(list.next)
-
-list.next = ListNode(3)
-print("\n\n- added ListNode(3) -")
-print(list.next)
-print(list.next.val)
-print(list.next.next)
-
-
-list.next.next = ListNode(4)
-print("\n\n- added ListNode(4) -")
-print(list.next.next.val)
-print(list.next.next.next)
-
-print("\n\n- Sum of index 0, 1 in ListNode -")
-result = list.val + list.next.val
-print(result)
+def addTwoNumbers(self, l1, l2):
+    carry = 0;
+    res = n = ListNode(0); # what's different res and n? are they sharing variance in a reference way?
+    while l1 or l2 or carry: # "carry" needed for what?
+        if l1:
+            carry += l1.val
+            l1 = l1.next;
+        if l2:
+            carry += l2.val;
+            l2 = l2.next;
+        carry, val = divmod(carry, 10) # after executing this, stored carry seem to be useless.
+        n.next = n = ListNode(val);
+    return res.next;
 
 
+# list = ListNode(2)
+# print(list.val)
+# print(list.next)
+#
+# list.next = ListNode(3)
+# print("\n\n- added ListNode(3) -")
+# print(list.next)
+# print(list.next.val)
+# print(list.next.next)
+#
+#
+# list.next.next = ListNode(4)
+# print("\n\n- added ListNode(4) -")
+# print(list.next.next.val)
+# print(list.next.next.next)
+#
+# print("\n\n- Sum of index 0, 1 in ListNode -")
+# result = list.val + list.next.val
+# print(result)
 
-# def addTwoNumbers(self, l1, l2):
-#     carry = 0;
-#     res = n = ListNode(0);
-#     while l1 or l2 or carry:
-#         if l1:
-#             carry += l1.val
-#             l1 = l1.next;
-#         if l2:
-#             carry += l2.val;
-#             l2 = l2.next;
-#         carry, val = divmod(carry, 10)
-#         n.next = n = ListNode(val);
-#     return res.next;
+
+
