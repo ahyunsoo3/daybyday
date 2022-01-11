@@ -13,15 +13,15 @@ class Solution(object):
             if ch in dic: # find difference from elemnets between ch and dic.
 
 
-                res = max(res, i-start)
+                res = max(res, i-start) # max menas that it is larger than other.
                 start = max(start, dic[ch]+1)
+
 
 
             dic[ch] = i
 
 
 
-        # answer is either in the beginning/middle OR some mid to the end of string
         return max(res, len(s)-start)
 
 
