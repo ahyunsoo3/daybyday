@@ -7,20 +7,16 @@ class Solution(object):
 
 
 
-        for i, ch in enumerate(s):
-            # when char already in dictionary
+        for i, ch in enumerate(s): # ch is nowhere defined, so, it is a teomporal role.
 
 
-            if ch in dic:
-                # check length from start of string to index
+            if ch in dic: # find difference from elemnets between ch and dic.
 
 
-                # update start of string index to the next index
                 res = max(res, i-start)
                 start = max(start, dic[ch]+1)
 
 
-            # add/update char to/of dictionary
             dic[ch] = i
 
 
@@ -29,5 +25,10 @@ class Solution(object):
         return max(res, len(s)-start)
 
 
+
+
+
+
+# - i -
 # this is another solution with commenting the codes, however, I doubt that it is valuable for me to see it.
 # Because it has all explanation step by step, so, I have to find the value in terms of my phase.
