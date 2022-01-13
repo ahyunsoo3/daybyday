@@ -31,3 +31,4 @@ class Solution:
 # reference : https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/2567/Python-O(log(min(mn))-solution
 
 
+# Time is important, but, don't be chased it.
