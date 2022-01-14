@@ -12,6 +12,9 @@ class Solution:
         return self.findKth(A, B, l // 2) if l % 2 == 1 else (self.findKth(A, B, l // 2 - 1) + self.findKth(A, B,
                                                                                                             l // 2)) / 2.0
 
+# what is valuable by doing this?
+
+
     def findKth(self, A, B, k):
         if len(A) > len(B):
             A, B = B, A
@@ -32,3 +35,4 @@ class Solution:
 
 
 # Time is important, but, don't be chased it.
+
