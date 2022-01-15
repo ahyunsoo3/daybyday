@@ -21,7 +21,7 @@ class Solution:
         if not A:
             return B[k]
         if k == len(A) + len(B) - 1:
-            return max(A[-1], B[-1])
+            return max(A[-1], B[-1]) # why do this reverse?
         i = len(A) // 2
         j = k - i
         if A[i] > B[j]:
