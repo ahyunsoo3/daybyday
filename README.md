@@ -1,16 +1,10 @@
-# LeetCode
+# Introduction 
+To broaden my basic coding, logic, and structure of building a software skills.
 
-To broden my basic skills of the coding, logic, structure of building a software.
+We normally aim to solve as many issues as we can. However, it not only helps us process that we didn't understand. You can achieve many things from that because it helps you experience so many things. Yet, it is not appropriate for you understand your phase. If you really hope to develop your steps at your level, you have to break down the problems that you encounter.
 
-We normally aim to solve the problmes as many as we can, however, it not helps us procesure that we didn't understand. 
-You can acheive many things from that because it helps you expereicens so many things, however, it is not apporiate for you understand your phase.
-If you really want to develop your steps in your level, you have to break down problems that you encounter.
-
-But, if you are in the test for get good grades in your school, in this persepctive might not gives you great grades, so, you don't adopt this belief without any consideration.
+But, if you are try to get good grades at school, this perspective might not gives you the best grades. Thus, you won't adopt this belief without any consideration.
 
 
-# time to solve a problem 
-
-I normally don't matter the time that I finally solve because it is not helpful for me to understand the knowledge of codes.
-But, If you wish to cut down your time that you solve ploblem, you should measure your time every solved problems and operate your watch.
-As the time passed, you could be front of previous days.
+# Time 
+I normally don't pay attention to the time until I finally solve something because it is not helpful for me to understand the knowledge of codes. Still, If you wish to cut down your time spent, you should measure your time for each of your solved problems. As the time passes, you could be ahead of previous days.
