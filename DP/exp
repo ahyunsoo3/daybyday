@@ -1,0 +1,26 @@
+https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/m2G1pAq0OO0
+
+Dynamic Programming (DP) is an algorithmic technique for solving an optimization problem
+by breaking it down into simpler subproblems and utilizing the fact that
+the optimal solution to the overall problem depends upon the optimal solution to its subproblems.
+
+Let’s take the example of the Fibonacci numbers.
+As we all know, Fibonacci numbers are a series of numbers in which each number is the sum of the two preceding numbers.
+The first few Fibonacci numbers are 0, 1, 1, 2, 3, 5, and 8, and they continue on from there.
+
+If we are asked to calculate the nth Fibonacci number, we can do that with the following equation,
+
+Fib(n) = Fib(n-1) + Fib(n-2), for n > 1
+
+As we can clearly see here, to solve the overall problem (i.e. Fib(n)),
+we broke it down into two smaller subproblems (which are Fib(n-1) and Fib(n-2)).
+This shows that we can use DP to solve this problem.
+
+# Characteristics of Dynamic Programming
+Before moving on to understand different methods of solving a DP problem,
+let’s first take a look at what are the characteristics of a problem that
+tells us that we can apply DP to solve it.
+
+
+
+
