@@ -14,7 +14,7 @@ class Solution:
 
 
 sol = Solution
-sp = random.sample(range(0,10), 5)
+sp = random.sample(range(0,10), 5) # list: 5
 res = sol.two_sum
 
 print(sp)
