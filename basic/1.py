@@ -9,7 +9,7 @@ class Solution:
     def two_sum(self, nums : list, target):
         for i in range(len(nums)):
             for j in range(i + 1, len(nums)):
-                if nums[j] == target - nums[i]:
+                if nums[j] == target - nums[i]: #math
                     return [i, j]
 
 
