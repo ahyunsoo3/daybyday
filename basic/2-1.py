@@ -2,6 +2,7 @@ class listnode:
 
     def __init__(self):
 
+
 # init is short for initialization. It is a constructor which gets called
 # when you make an instance of the class and it is not necessary.
 # But usually it our practice to write init method
