@@ -1,28 +1,29 @@
 # Given a string s, return the longest palindromic substring in s.
 # palindrome : a word or phrase that reads the same backwards as forwards
-
-class Solution:
-    # @return a string
-    def longestPalindrome(self, s):
-        if len(s)==0:
-        	return 0
-        maxLen=1
-        start=0
-        for i in range(len(s)):
-        	if i-maxLen >=1 and s[i-maxLen-1:i+1]==s[i-maxLen-1:i+1][::-1]:
-        		start=i-maxLen-1
-        		maxLen+=2
-        		continue
-
-        	if i-maxLen >=0 and s[i-maxLen:i+1]==s[i-maxLen:i+1][::-1]:
-        		start=i-maxLen
-        		maxLen+=1
-        return s[start:start+maxLen]
-
-# You are trying to run a Python 2 codebase with Python 3. xrange() was renamed to range() in Python 3.
+import random
+import string
 
 
-# https://leetcode.com/problems/longest-palindromic-substring/discuss/2925/Python-O(n2)-method-with-some-optimization-88ms.
+letters = string.ascii_lowercase
+print ( ''.join(random.choice(letters) for i in range(10)) )
+
+# Without considering about 1 length of letter.
+
+
+# class Solution:
+#     def longestPalindrome(self, s):
+
+
+
+
+
+
+	# Constraints:
+# 1 <= s.length <= 1000
+# s consist of only digits and English letters.
+
+
+
 
 
 
