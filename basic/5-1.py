@@ -6,7 +6,7 @@ def longestPalindrome(self, s):
         if len(tmp) > len(res):
             res = tmp
         # even case, like "abba"
-        tmp = self.helper(s, i, i + 1) # test
+        tmp = self.helper(s, i, i + 1)
         if len(tmp) > len(res):
             res = tmp
     return res
