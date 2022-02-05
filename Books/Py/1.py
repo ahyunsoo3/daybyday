@@ -22,13 +22,25 @@
 # for _ in range(0, 3):
 #     print(next(g))
 
-print(list(range(5)))
+# - list range -
+# print(list(range(5)))
+#
+#
+# for i in range(5):
+#     print(i, end='  ')
 
 
-for i in range(5):
-    print(i, end='  ')
+# - enumerate -
 
+a = [1,2,3,4,5,123,42,5]
 
+#
+# for i in range(len(a)):
+#     print(i, a[i])
+#
+
+for i, v in enumerate(a):
+    print(i, v)
 
 
 
