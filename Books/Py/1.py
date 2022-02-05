@@ -22,6 +22,12 @@
 # for _ in range(0, 3):
 #     print(next(g))
 
+print(list(range(5)))
+
+
+for i in range(5):
+    print(i, end='  ')
+
 
 
 
