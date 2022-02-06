@@ -51,7 +51,20 @@
 # - type -
 # print (type(5 / 3))
 
+# - divmod -
+# print ( divmod(5, 3), end=' ')
+#
+# print ('A', 'B', sep=',')
+#
+# # for debugging
+#
+# a = ['a', 'b']
+# print(a)
+# print(' '.join(a))
 
+# -------------------------------------------------------
 
-
+class MyClass(object):
+    def testOne(self):
+        pass
 
