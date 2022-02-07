@@ -63,8 +63,38 @@
 # print(' '.join(a))
 
 # -------------------------------------------------------
+#
+# class MyClass(object):
+#     def testOne(self):
+#         pass
 
-class MyClass(object):
-    def testOne(self):
-        pass
+#
+# for n in range(1, 15 + 1):
+#     print(n, n ** 2, 2 ** n)
+#
+#
+# # object > int > bool
+#
+# a = set()
+# print (type(a))
+#
+# a = [1, 'Hello', True
+#     ]
+# print(a)
 
+# - P -
+
+def isPalindrome(self, s: str) -> bool:
+    strs = []
+    for char in s:
+        if char.isalnum():
+            strs.append(char.lower())
+
+    while len(strs) > 1:
+        if strs.pop(0) != strs.pop():
+            return False
+
+    return True
+
+checkPalindrome = isPalindrome()
+print (checkPalindrome('asdfeseee') )
