@@ -16,8 +16,11 @@ def timeConversion(s):
     hh = s[:2]
     mm = s[3:5]
     ss = s[6:8]
+    meridiem = s[-2:]
 
-    if s[-2:] == 'PM':
+    if hh == '12' and meridiem == 'AM':
+        hh = '00'
+    elif meridiem == 'PM' and hh != '12':
         hh = int(hh) + 12
 
     print(f"{hh}:{mm}:{ss}")
