@@ -16,10 +16,24 @@ import sys
 #
 
 def caesarCipher(s, k):
-    # Write your code here
+
+    lis = list(s)
+    for i in range(len(s)):
+        if 65 <= ord(lis[i]) <= 90:
+            if 90 < ord(lis[i]) + k:
+                lis[i] = chr(ord(lis[i]) + k - 26)
+            else:
+                lis[i] = chr(ord(lis[i]) + k)
+        elif 97 <= ord(lis[i]) <= 122:
+            if 122 < ord(lis[i]) + k:
+                lis[i] = chr(ord(lis[i]) + k - 26)
+            else:
+                lis[i] = chr(ord(lis[i]) + k)
+
+    s = ''.join(lis)
+    print(s)
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     n = int(input().strip())
 
@@ -29,6 +43,3 @@ if __name__ == '__main__':
 
     result = caesarCipher(s, k)
 
-    fptr.write(result + '\n')
-
-    fptr.close()
