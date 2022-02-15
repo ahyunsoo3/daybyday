@@ -16,7 +16,7 @@ import sys
 #
 
 def caesarCipher(s, k):
-
+    k = k % 26
     lis = list(s)
     for i in range(len(s)):
         if 65 <= ord(lis[i]) <= 90:
