@@ -14,30 +14,51 @@ import sys
 #
 
 def gridChallenge(grid):
-    grid = ['cba', 'eaaq', 'efa']
 
-    for i in range(len(grid)):
-        grid[i] = ''.join(sorted(grid[i]))
+    lenGrid = len(grid[0])
 
-    print(grid)
+    for i in range(lenGrid):
+        for j in range(lenGrid):
+
+            if j == lenGrid - 1: break
+            elif grid[i][j] > grid[i][j+1]:
+                print ("NO")
+                return
+
+    for j in range(lenGrid):
+        for i in range(lenGrid):
+
+            if i == lenGrid - 1: break
+            elif grid[i][j] > grid[i+1][j]:
+                print ("NO")
+                return
+
+    print("YES")
+    return
+
+
+
+
+
+
+
 
 
 if __name__ == '__main__':
 
-    gridChallenge('str')
 
-    # t = int(input().strip())
-    #
-    # for t_itr in range(t):
-    #     n = int(input().strip())
-    #
-    #     grid = []
-    #
-    #     for _ in range(n):
-    #         grid_item = input()
-    #         grid.append(grid_item)
-    #
-    #     result = gridChallenge(grid)
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        n = int(input().strip())
+
+        grid = []
+
+        for _ in range(n):
+            grid_item = input()
+            grid.append(grid_item)
+
+        result = gridChallenge(grid)
 
 
 # Determine if the columns are also in ascending alphabetical order, top to bottom. Return YES if they are or NO if they are not.
