@@ -13,13 +13,32 @@ import sys
 # The function accepts STRING_ARRAY grid as parameter.
 #
 
-def gridChallenge(grid):
+def gridChallenge(gridStr):
 
-    lenGrid = len(grid[0])
 
+
+    lenGrid = len(gridStr[0])
+    grid = []
+    # making elements of grid being list.
+    for i in range(lenGrid):
+        grid.append(list(gridStr[i]))
+
+
+    #rearrange only rows
     for i in range(lenGrid):
         for j in range(lenGrid):
+            for k in range(j, lenGrid):
+                if k+1 != lenGrid and grid[i][j] > grid[i][k+1]:
+                    temp = grid[i][j]
+                    grid[i][j] = grid[i][k]
+                    grid[i][k] = temp
 
+
+    print(grid)
+
+    #determine
+    for i in range(lenGrid):
+        for j in range(lenGrid):
             if j == lenGrid - 1: break
             elif grid[i][j] > grid[i][j+1]:
                 print ("NO")
@@ -27,7 +46,6 @@ def gridChallenge(grid):
 
     for j in range(lenGrid):
         for i in range(lenGrid):
-
             if i == lenGrid - 1: break
             elif grid[i][j] > grid[i+1][j]:
                 print ("NO")
@@ -62,4 +80,5 @@ if __name__ == '__main__':
 
 
 # Determine if the columns are also in ascending alphabetical order, top to bottom. Return YES if they are or NO if they are not.
-# -> The question is to do not create the grid, but identify sorted grid as ascending order in rows and columns.
+# -> The question is to do not create the grid, but identify sorted grid as ascending order in rows and columns. [x]
+# -> rearrange & determine [o]
