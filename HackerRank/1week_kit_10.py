@@ -17,7 +17,8 @@ def gridChallenge(gridStr):
 
 
 
-    lenGrid = len(gridStr[0])
+    lenGrid = len(gridStr)
+    lenEle = len(gridStr[0])
     grid = []
     # making elements of grid being list.
     for i in range(lenGrid):
@@ -26,25 +27,24 @@ def gridChallenge(gridStr):
 
     #rearrange only rows
     for i in range(lenGrid):
-        for j in range(lenGrid):
-            for k in range(j, lenGrid):
-                if k+1 != lenGrid and grid[i][j] > grid[i][k+1]:
+        for j in range(lenEle):
+            for k in range(j+1, lenEle):
+                if grid[i][j] > grid[i][k]:
                     temp = grid[i][j]
                     grid[i][j] = grid[i][k]
                     grid[i][k] = temp
 
 
-    print(grid)
 
     #determine
     for i in range(lenGrid):
-        for j in range(lenGrid):
-            if j == lenGrid - 1: break
+        for j in range(lenEle):
+            if j == lenEle - 1: break
             elif grid[i][j] > grid[i][j+1]:
                 print ("NO")
                 return
 
-    for j in range(lenGrid):
+    for j in range(lenEle):
         for i in range(lenGrid):
             if i == lenGrid - 1: break
             elif grid[i][j] > grid[i+1][j]:
