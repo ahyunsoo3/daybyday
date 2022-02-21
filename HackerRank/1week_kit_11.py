@@ -18,13 +18,13 @@ import sys
 def superDigit(n, k):
     # Write your code here
     sum = 0
-    n = str(n)
+    n = str(n) * k
 
     for i in n:
         sum += int(i)
 
-    if k != 0:
-        superDigit(sum, k-1)
+    if len(n) != 1:
+        superDigit(sum, 1)
     else:
         print(sum)
 
