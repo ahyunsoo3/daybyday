@@ -30,6 +30,9 @@ def superDigit(n, k):
 
 
 
+#   Or Not? : the cost of converting value of type every time seem to be highly expensive.
+#    for i in n:
+#        sum += int(i)
 
 
 
