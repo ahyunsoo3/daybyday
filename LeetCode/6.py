@@ -24,11 +24,12 @@ class Solution(object):
 
 
 
-s = input().rstrip().split()
+s = input()
 numRows = int(input())
 
 sol = Solution()
-sol.convert(s, numRows)
+answer = sol.convert(s, numRows)
+print(answer)
 
 
 # https://leetcode.com/problems/zigzag-conversion/discuss/3404/Python-O(n)-Solution-in-96ms-(99.43)
