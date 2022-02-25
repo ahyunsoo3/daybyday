@@ -1,3 +1,4 @@
+
 class Solution(object):
     def convert(self, s, numRows):
         """
@@ -21,6 +22,13 @@ class Solution(object):
 
         return ''.join(L)
 
+
+
+s = input().rstrip().split()
+numRows = int(input())
+
+sol = Solution()
+sol.convert(s, numRows)
 
 
 # https://leetcode.com/problems/zigzag-conversion/discuss/3404/Python-O(n)-Solution-in-96ms-(99.43)
