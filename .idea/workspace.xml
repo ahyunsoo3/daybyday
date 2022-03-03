@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90f84dfb-3b56-469d-b79d-5e1b666c773b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeetCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/10.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/10.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +47,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahyun\Documents\GitHub\LeetCode" />
       <recent name="C:\Users\ahyun\Documents\GitHub\daybyday\LeetCode" />
       <recent name="C:\Users\ahyun\Documents\GitHub\daybyday\HackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.9-1">
-    <configuration name="1week_kit_10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.10">
+    <configuration name="10" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,11 +61,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HackerRank" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HackerRank/1week_kit_10.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/10.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.10" />
         <item itemvalue="Python.9-1" />
         <item itemvalue="Python.7" />
         <item itemvalue="Python.6" />
         <item itemvalue="Python.1week_kit_11" />
-        <item itemvalue="Python.1week_kit_10" />
       </list>
     </recent_temporary>
   </component>

@@ -18,6 +18,12 @@ def isMatch(self, s, p):
     return False
 
 
+
+
+
 # Reference :
 # https://leetcode.com/problems/regular-expression-matching/discuss/5678/Fast-Python-solution-with-backtracking-and-caching-%2B-DP-solution
 # There are more answers provided from the creator who makes this. (DP ver)
+
+# In this time, I should be better to not understand this code because it has a trait that I follow some logic that I don't know this time.
+# If I spend my time on this, I could understand this quickly, however, in terms of time consuming of learning process, it shouldn't be that.
