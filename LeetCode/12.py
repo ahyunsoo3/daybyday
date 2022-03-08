@@ -12,5 +12,11 @@ class Solution:
         return res
 
 
+slv = Solution()
+
+x = int(input())
+
+print(slv.intToRoman(x))
+
 # reference :
 # https://leetcode.com/problems/integer-to-roman/discuss/6304/Python-simple-solution.
