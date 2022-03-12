@@ -29,7 +29,7 @@ def threeSum(self, nums):
                     l += 1
 
 
-                while l < r and nums[r] == nums[r-1]:
+                while l < r and nums[r] == nums[r-1]: # figure out what is for instance. or do they have value of understanding this?  it seems like just studying instances that are unfamiliar with me so far. I don't know about the value of it.
                     r -= 1
 
                 l += 1; r -= 1
