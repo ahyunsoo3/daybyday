@@ -1,31 +1,22 @@
-from multiprocessing import Process, Value, Array
-# from multiprocessing import Process, Pipe
-#
-# def f(conn):
-#     conn.send([42, None, 'Hello'])
-#     conn.close()
-#
-# if __name__ == '__main__':
-#     parent_conn, child_conn = Pipe()
-#     p = Process(target=f, args=(child_conn,))
-#     p.start()
-#     print(parent_conn.recv())
-#     p.join()
+import time
 
-def f(n, a):
-    n.value = 3.1415927
-    for i in range(len(a)):
-        a[i] = -a[i]
+def sleepy_man():
+    print('Starting to sleep')
+    time.sleep(3)
+    print('Done sleeping')
 
-if __name__ == '__main__':
-    num = Value('d', 0.0)
-    arr = Array('i', range(10))
+tic = time.time()
+sleepy_man()
+sleepy_man()
+toc = time.time()
 
-    p = Process(target=f, args=(num,arr))
-    p.start()
-    p.join()
+print('Done in {:.4f} second'.format(toc-tic))
 
-    print(num.value)
-    print(arr[:])
 
-    
+
+
+
+
+
+
+# Refernce : https://www.analyticsvidhya.com/blog/2021/04/a-beginners-guide-to-multi-processing-in-python/
