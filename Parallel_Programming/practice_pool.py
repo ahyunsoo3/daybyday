@@ -1,22 +1,14 @@
-import time
+from multiprocessing import Process, freeze_support
 
-def sleepy_man():
-    print('Starting to sleep')
-    time.sleep(3)
-    print('Done sleeping')
+def f():
+    print('hlo wrold')
 
-tic = time.time()
-sleepy_man()
-sleepy_man()
-toc = time.time()
-
-print('Done in {:.4f} second'.format(toc-tic))
+if __name__ == '__main__':
+    freeze_support()
+    Process(target=f).start()
 
 
 
 
+#m : assert count == len(arr1) * arr1.itemsize
 
-
-
-
-# Refernce : https://www.analyticsvidhya.com/blog/2021/04/a-beginners-guide-to-multi-processing-in-python/
