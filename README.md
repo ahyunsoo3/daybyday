@@ -8,3 +8,8 @@ But, if you are try to get good grades at school, this perspective might not giv
 
 # Time 
 I normally don't pay attention to the time until I finally solve something because it is not helpful for me to understand the knowledge of codes. Still, If you wish to cut down your time spent, you should measure your time for each of your solved problems. As the time passes, you could be ahead of previous days.
+
+
+# -
+
+Achivements follow the difficulty that is made in complexity.
