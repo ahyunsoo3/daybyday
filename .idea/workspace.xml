@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90f84dfb-3b56-469d-b79d-5e1b666c773b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parallel_Programming/practice_pool.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parallel_Programming/practice_pool.py" afterDir="false" />
-    </list>
+    <list default="true" id="90f84dfb-3b56-469d-b79d-5e1b666c773b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,11 +44,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ahyun\Documents\GitHub\LeetCode" />
       <recent name="C:\Users\ahyun\Documents\GitHub\daybyday\LeetCode" />
       <recent name="C:\Users\ahyun\Documents\GitHub\daybyday\HackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.practice_pool">
+  <component name="RunManager" selected="Python.start_pytorch">
     <configuration name="12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.practice_pool" />
         <item itemvalue="Python.start_pytorch" />
+        <item itemvalue="Python.practice_pool" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.14" />
         <item itemvalue="Python.12" />
