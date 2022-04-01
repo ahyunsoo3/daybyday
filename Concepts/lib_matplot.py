@@ -1,13 +1,15 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.arange(1,5)
-y = x**5
-plt.plot([10,20,30,40],[400,200,300,400],'go',x,y,'r^') # matched with each other.
-plt.title('first plot')
-plt.xlabel('x axis')
-plt.ylabel('y axis')
+data = {'a':np.arange(50),
+        'c':np.random.randint(0,50,50),
+        'd':np.random.randn(50)}
+data['b'] = data['a'] + 10 * np.random.randn(50)
+data['d'] = np.abs(data['d']) * 20
+
+plt.scatter('a','b',c='c',s='d',data=data)
+plt.xlabel('entry a')
+plt.ylabel('entry b')
 plt.show()
-    
 
 # Ref : https://www.geeksforgeeks.org/python-matplotlib-an-overview/
