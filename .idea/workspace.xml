@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="90f84dfb-3b56-469d-b79d-5e1b666c773b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concepts/lib_pandas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Concepts/lib_pandas.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <recent name="C:\Users\ahyun\Documents\GitHub\daybyday\HackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lib_sklearn">
+  <component name="RunManager" selected="Python.lib_pandas">
     <configuration name="get_item" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lib_sklearn" />
         <item itemvalue="Python.lib_pandas" />
+        <item itemvalue="Python.lib_sklearn" />
         <item itemvalue="Python.lib_matplot" />
         <item itemvalue="Python.get_item" />
         <item itemvalue="Python.start_pytorch" />
@@ -214,11 +215,6 @@
           <url>file://$PROJECT_DIR$/Concepts/lib_matplot.py</url>
           <line>6</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Concepts/lib_pandas.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
