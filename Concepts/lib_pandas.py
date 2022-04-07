@@ -1,8 +1,11 @@
 import pandas as pd
 
-df = pd.read_csv('data.csv', encoding='latin-')
+data = [[1,4], [2,5], [3,6]]
 
-print(df.to_string())
+df = pd.DataFrame(data, index=['row1','row2','ro3'],
+                  columns=['col1','col2'])
+
+print(df)
 
 
-# https://www.w3schools.com/python/pandas/default.asp
+# https://towardsdatascience.com/a-python-pandas-introduction-to-excel-users-1696d65604f6
