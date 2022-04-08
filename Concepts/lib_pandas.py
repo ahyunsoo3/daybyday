@@ -1,11 +1,19 @@
 import pandas as pd
 
-data = [[1,4], [2,5], [3,6]]
+df = pd.read_csv('gdp.csv', encoding='ISO-8859-1')
 
-df = pd.DataFrame(data, index=['row1','row2','ro3'],
-                  columns=['col1','col2'])
+states = ["Cal",'Tex','Flo','New']
+population = [396, 297, 219, 192]
+dict_states = {'States':states, 'Population':population}
+
+df = pd.DataFrame(dict_states)
+
+df.to_csv('../df.csv')
 
 print(df)
 
 
-# https://towardsdatascience.com/a-python-pandas-introduction-to-excel-users-1696d65604f6
+# Ref : https://towardsdatascience.com/a-python-pandas-introduction-to-excel-users-1696d65604f6
+# Issue Ref : https://stackoverflow.com/questions/43283202/permission-denied-when-pandas-dataframe-to-tempfile-csv
+
+
