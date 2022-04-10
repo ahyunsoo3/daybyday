@@ -1,29 +1,35 @@
-def fourSum(self, nums, target):
-    def findNsum(nums, target, N, result, results):
-        if len(nums) < N or N < 2 or target < nums[0]*N or target > nums[-1]*N:
-            return
-        if N == 2:
-            l,r = 0,len(nums)-1
-            while l < r:
-                s = nums[l] + nums[r]
-                if s == target:
-                    result  s.append(result + [nums[l], nums[r]])
-                    l += 1
-                    while l < r and nums[l] == nums[l-1]:
-                        l += 1
-                elif s < target:
-                    l += 1
-                else:
-                    r -= 1
-        else: # recursively reduce N
-            for i in range(len(nums)-N+1):
-                if i == 0 or (i > 0 and nums[i-1] != nums[i]):
-                    findNsum(nums[i+1:], target-nums[i], N-1, result+[nums[i]], results)
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 
-    results = []
-    findNsum(sorted(nums), target, 4, [], results)
-    return results
+// Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
+class Solution
+{
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n)
+    {
+        ListNode** t1 = &head, *t2 = head;
+        for(int i = 1; i < n; ++i)
+        {
+            t2 = t2->next;
+        }
+        while(t2->next != NULL)
+        {
+            t1 = &((*t1)->next);
+            t2 = t2->next;
+        }
+        *t1 = (*t1)->next;
+        return head;
+    }
+};
 
 
-
-# ref : https://leetcode.com/problems/4sum/discuss/8545/Python-140ms-beats-100-and-works-for-N-sum-(Ngreater2)
+// ref : https://leetcode.com/problems/remove-nth-node-from-end-of-list/discuss/8812/My-short-C%2B%2B-solution
