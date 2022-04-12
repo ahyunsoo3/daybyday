@@ -14,3 +14,9 @@ int main()
     }
     cout << endl;
 }
+
+
+// Be familiar with debugging mode in VS.
+
+// https://code.visualstudio.com/docs/cpp/config-msvc
+
