@@ -1,29 +1,28 @@
-# Given a string s, return the longest palindromic substring in s.
-# palindrome : a word or phrase that reads the same backwards as forwards
-import random
-import string
+def longestPalindrome(self, s):
+    res = ""
+    for i in range(len(s)):
+        # odd case, like "aba"
+        tmp = self.helper(s, i, i)
+        if len(tmp) > len(res):
+            res = tmp
+        # even case, like "abba"
+        tmp = self.helper(s, i, i + 1)
+        if len(tmp) > len(res):
+            res = tmp
+    return res
 
 
-letters = string.ascii_lowercase
-print ( ''.join(random.choice(letters) for i in range(10)) )
-
-# Without considering about 1 length of letter.
-
-
-# class Solution:
-#     def longestPalindrome(self, s):
-
+# get the longest palindrome, l, r are the middle indexes
+# from inner to outer
+def helper(self, s, l, r):
+    while l >= 0 and r < len(s) and s[l] == s[r]:
+        l -= 1;
+        r += 1
+    return s[l + 1:r]
 
 
-
-
-
-	# Constraints:
-# 1 <= s.length <= 1000
-# s consist of only digits and English letters.
-
-
-
+# Problem : https://leetcode.com/problems/longest-palindromic-substring/
+# Ref : https://leetcode.com/problems/longest-palindromic-substring/discuss/2954/Python-easy-to-understand-solution-with-comments-(from-middle-to-two-ends).
 
 
 

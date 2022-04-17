@@ -3,9 +3,6 @@ import random
 
 class Solution:
     def findMedianSortedArrays(self, nums1, nums2):
-        # 1. merged lists -> how to merge them?
-        # 2. find median -> devide the size of list.
-
         num3 = nums1 + nums2
         num3.sort()
 
@@ -16,7 +13,7 @@ class Solution:
         elif len(num3) % 2 == 1:
             return num3[len(num3) // 2]
 
-        # need my Test Case
+
 
 sl = Solution()
 
