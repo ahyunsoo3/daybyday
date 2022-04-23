@@ -9,8 +9,12 @@ class slv:
         return list(generate('', n, n))
 
 
-print(slv().generateParenthesis(3))
+print(slv().generateParenthesis(1))
 
 
 # Ref : https://leetcode.com/problems/generate-parentheses/discuss/10096/4-7-lines-Python
 # Ref : https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
+
+# - Q -
+# what is stored at q?
+# when a function is closed, what does happen with regard to memory?
