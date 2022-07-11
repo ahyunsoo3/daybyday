@@ -20,7 +20,13 @@ class Solution(object):
             cur = cur.next.next
         return dummy.next
 
-
+# class Sol1():
+#     def swap(self, hello):
+#         print(hello)
+#
+#
+# res = Sol1()
+# res.swap(3)
 
 #TC
 
@@ -29,8 +35,16 @@ tc.next = ListNode(1)
 tc.next.next = ListNode(3)
 tc.next.next.next = ListNode(4)
 
-res = Solution.swapPairs(tc)
+slv = Solution()
+res = slv.swapPairs(tc)
 print (res)
+print (res.val)
+
+var1 = 'res.val'
+
+for i in range(0,3):
+    var1 = var1[:-4] + '.next.val'
+    print (var1)
 
 
 # Ref : https://leetcode.com/problems/swap-nodes-in-pairs/discuss/171788/Python-or-Dummynode
