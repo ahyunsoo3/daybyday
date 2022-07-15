@@ -3,6 +3,9 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+# think it as one data.
+
 class asd:
     def reverseKGroup(self, head, k):
         dummy = jump = ListNode(0)

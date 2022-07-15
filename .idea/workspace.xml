@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90f84dfb-3b56-469d-b79d-5e1b666c773b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeetCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/25.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/25.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +57,7 @@
       <recent name="C:\Users\ahyun\Documents\GitHub\daybyday\HackerRank" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.24">
+  <component name="RunManager" selected="Python.test">
     <configuration name="22" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,9 +165,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.24" />
         <item itemvalue="Python.22" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.5" />
         <item itemvalue="Python.lib_pandas" />
       </list>
@@ -190,6 +194,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -216,7 +221,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/LeetCode/test.py</url>
-          <line>2</line>
+          <line>1</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
